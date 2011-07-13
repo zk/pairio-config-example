@@ -1,0 +1,11 @@
+#
+# Example pair.io config.  
+# Fork this repo at https://github.com/zkim/pairio-config-example
+#
+
+# Quickstarts are pre-packaged instances, which allow you to get up
+# and running in a short amount of time.  Pair.io will examine your
+# repo and try to pick the correct one.
+#
+# You can override this behavior like so:
+quickstart: clojure # | ruby19 | rails3 | nodejs
