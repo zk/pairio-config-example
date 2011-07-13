@@ -1,24 +1,26 @@
 #
 # Example pair.io config.  
-# Fork this repo at https://github.com/zkim/pairio-config-example
+# https://github.com/zkim/pairio-config-example
 #
 
 # Quickstarts are pre-packaged instances, which allow you to get up
 # and running in a short amount of time.  Pair.io will examine your
 # repo and try to pick the correct one.
 #
-# You can override this behavior like so (uncomment):
+# You can force a particular quickstart like so:
 #quickstart: empty # | ruby19 | rails3 | nodejs | clojure
 
 # Pair.io gives you fine-grained control over what we provision for
-# you. Below are the full set of configuration options we support.
-
+# you. Here's the full set of config options:
 
 image-id: ami-1aad5273 # must be in the us-east-1 region
 size: large # | micro | small
 inbound-ports: 
+  - 22  # Make sure you've got 22 so pair can connect
+        # to your instance.
   - 80
   - 81
   - "tcp:1.2.3.4/32:443"
   - "udp:0.0.0.0/0:1234"
+provision: none # | all 
 
