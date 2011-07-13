@@ -7,5 +7,18 @@
 # and running in a short amount of time.  Pair.io will examine your
 # repo and try to pick the correct one.
 #
-# You can override this behavior like so:
-quickstart: empty # | ruby19 | rails3 | nodejs | clojure
+# You can override this behavior like so (uncomment):
+#quickstart: empty # | ruby19 | rails3 | nodejs | clojure
+
+# Pair.io gives you fine-grained control over what we provision for
+# you. Below are the full set of configuration options we support.
+
+
+image-id: ami-1aad5273 # must be in the us-east-1 region
+size: large # | micro | small
+inbound-ports: 
+  - 80
+  - 81
+  - "tcp:1.2.3.4/32:443"
+  - "udp:0.0.0.0/0:1234"
+
