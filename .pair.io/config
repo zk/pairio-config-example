@@ -22,5 +22,13 @@ inbound-ports:
   - 81
   - "tcp:1.2.3.4/32:443"
   - "udp:0.0.0.0/0:1234"
-provision: none # | all 
+provision: chef # | chef | pallet | puppet (working on it)
+
+# when chef (http://wiki.opscode.com/display/chef/Chef+Solo)
+chef:
+  config: solo.rb # chef-solo -c flag
+  json-attributes: node.json # -j flag
+# recipe-url: http://example.com/chef-solo.tar.gz # -r flag
+
+
 
