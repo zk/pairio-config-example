@@ -8,4 +8,4 @@
 # repo and try to pick the correct one.
 #
 # You can override this behavior like so:
-quickstart: clojure # | ruby19 | rails3 | nodejs
+quickstart: empty # | ruby19 | rails3 | nodejs | clojure
