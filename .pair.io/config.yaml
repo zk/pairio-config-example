@@ -22,7 +22,7 @@ inbound-ports:
   - 81
   - "tcp:1.2.3.4/32:443"
   - "udp:0.0.0.0/0:1234"
-provision: none # none | sh | chef
+provision: sh # none | sh | chef
 
 # when chef (http://wiki.opscode.com/display/chef/Chef+Solo)
 chef:
