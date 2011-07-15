@@ -31,4 +31,7 @@ chef:
 # recipe-url: http://example.com/chef-solo.tar.gz # -r flag
 
 
+# Pair.io images, quickstart-like speed with your own config.
+pairio-image: 4e1fdeebe4b03f4db7d4c829-zkim-zkim/cljs
+
 
