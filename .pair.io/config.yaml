@@ -14,7 +14,7 @@
 # you. Here's the full set of config options:
 
 image-id: ami-1aad5273 # must be in the us-east-1 region
-size: large # | micro | small
+size: small # | micro | small
 inbound-ports: 
   - 22  # Make sure you've got 22 so pair can connect
         # to your instance.
