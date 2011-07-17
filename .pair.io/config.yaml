@@ -32,6 +32,6 @@ chef:
 
 
 # Pair.io images, quickstart-like speed with your own config.
-pairio-image: 4e221a62e4b0c3efb1774b00-zkim-dakrone/cheshire
+pairio-image: 4e222551e4b0ef10ee436f5b-zkim-dakrone/cheshire
 
 
