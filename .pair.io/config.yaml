@@ -13,25 +13,11 @@
 # Pair.io gives you fine-grained control over what we provision for
 # you. Here's the full set of config options:
 
-image-id: ami-1aad5273 # must be in the us-east-1 region
-size: small # | micro | small
+image-id: ami-cef405a7
+size: large # | micro | small | large
 inbound-ports: 
-  - 22  # Make sure you've got 22 so pair can connect
-        # to your instance.
-  - 80
-  - 81
-  - "tcp:1.2.3.4/32:443"
-  - "udp:0.0.0.0/0:1234"
-provision: sh # none | sh | chef
+  - 22
+provision: none # none | sh | chef
 
-# when chef (http://wiki.opscode.com/display/chef/Chef+Solo)
-chef:
-  config: solo.rb # chef-solo -c flag
-  json-attributes: node.json # -j flag
-# recipe-url: http://example.com/chef-solo.tar.gz # -r flag
-
-
-# Pair.io images, quickstart-like speed with your own config.
-pairio-image: 4e222551e4b0ef10ee436f5b-zkim-dakrone/cheshire
 
 
