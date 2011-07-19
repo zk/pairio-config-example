@@ -17,6 +17,7 @@ image-id: ami-cef405a7
 size: large # | micro | small | large
 inbound-ports: 
   - 22
+
 provision: none # none | sh | chef
 
 
