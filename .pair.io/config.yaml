@@ -14,7 +14,7 @@
 # you. Here's the full set of config options:
 
 image-id: ami-cef405a7
-size: large # | micro | small | large
+size: small # | micro | small | large
 inbound-ports: 
   - 22
   - 80
