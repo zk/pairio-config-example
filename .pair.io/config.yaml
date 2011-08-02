@@ -22,5 +22,5 @@ inbound-ports:
 
 provision: none # none | sh | chef
 
-
+pairio-image: 4e3882aae4b034f1db685c0b-zkim-dakrone/cheshire
 
